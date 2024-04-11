@@ -30,7 +30,7 @@ const Chat = () => {
   };
 
   const fetchOpenAIChatCompletion = async (input) => {
-    const apiKey = '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'; // Replace 'YOUR_API_KEY' with your actual API key
+    const apiKey = 'sk-'; // Replace 'YOUR_API_KEY' with your actual API key
     var messageArray = fullInput;
     if(input) {
       const message = {"role": "user", "content": input};
