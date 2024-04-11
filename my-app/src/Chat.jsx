@@ -30,7 +30,7 @@ const Chat = () => {
   };
 
   const fetchOpenAIChatCompletion = async (input) => {
-    const apiKey = '12'; // Replace 'YOUR_API_KEY' with your actual API key
+    const test = '12'; // Replace 'YOUR_API_KEY' with your actual API key
     var messageArray = fullInput;
     if(input) {
       const message = {"role": "user", "content": input};
@@ -43,7 +43,7 @@ const Chat = () => {
     const requestOptions = {
       method: 'POST',
       headers: {
-        'Authorization': `Bearer ${apiKey}`,
+        'Authorization': `Bearer ${test}`,
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
